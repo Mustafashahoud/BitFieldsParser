@@ -21,8 +21,6 @@ public class MainActivity extends AppCompatActivity {
     Button bserialize;
     Button bdeserialize;
     TextView tvoutput;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,10 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 } catch (IOException ex) {
                     ex.getMessage();
                 }
-
             }
-
-
         });
 
         bdeserialize.setOnClickListener(new View.OnClickListener() {
@@ -70,28 +65,14 @@ public class MainActivity extends AppCompatActivity {
                     System.out.println("Text [Byte Format] : " + bytes);
                     try {
                         User user2 = User.class.cast(deserialize(bytes));
-                        //User user3 = (User) deserialize(bytes);
-                        //System.out.println("Text Decryted : " + user2.getUser_name());
-                        //System.out.println("After Deserialization");
-                        //System.out.println(user2);
                         tvoutput.setText(user2.toString());
-
-
                     } catch (ClassNotFoundException ex) {
                     }
-
-
                 } catch (IOException ex) {
                 }
-
             }
-
         });
-
-
     }
-
-
     public static byte[] serialize(Object obj) throws IOException {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         ObjectOutputStream os = new ObjectOutputStream(out);
