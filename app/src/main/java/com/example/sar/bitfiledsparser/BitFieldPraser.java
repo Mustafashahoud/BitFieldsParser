@@ -15,26 +15,6 @@
 //        try{
 //            byte[] bytes = serialize(user);
 //          System.out.println("Text [Byte Format] : " + bytes);
-//            /*
-//            Serialization is the process of converting a object into a stream
-//            Deserialization is the process of reconstructing an object that has been serialized before
-//            */
-//            /*
-//            serialize method converts a data Structure into ByteArray which can be sent sequentially over a connection
-//            and then the receiver will Deserialize it and reconstruct the object
-//            this is a useful way to use the serializable Interface but what we can do more is to put the
-//            attributes of an object into a file  and then get them back "but that object must implement the serializable Interface
-//            */
-//            /*
-//            FileOutputStream fio = new FileOutputStream(new File("User.txt"));
-//            ObjectOutputStream oos = new ObjectOutputStream(fio);
-//            oos.writeObject(user);
-//            and then we can read it back
-//            FileInputStream fio = new FileInputStream(new File("User.txt"));
-//            ObjectInoutStream ois = new ObjectInputStream(fio);
-//            User user = (user)ois.readObject(user);
-//            */
-//
 //            try{
 //                User user2 = User.class.cast(deserialize(bytes));
 //                User user3 = (User) deserialize(bytes);
