@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:text="Name:" />
+
+    <EditText
+        android:id="@+id/name"
+
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/gender"
+        android:layout_alignTop="@+id/textView1"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="102dp"
+        android:text="Height:" />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:inputType="text|textPersonName|number" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="177dp"
+        android:text="Age :" />
+
+    <EditText
+        android:id="@+id/age1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:inputType="textPersonName|number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="Gender:" />
+
+    <EditText
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/serialize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/name"
+        android:layout_marginBottom="138dp"
+        android:text="Serialize" />
+
+    <Button
+        android:id="@+id/deserialize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/height"
+        android:layout_alignTop="@+id/serialize"
+        android:text="DeSerialize" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="67dp"
+        android:text="Result:" />
+
+    <EditText
+        android:id="@+id/output"
+        android:layout_width="289dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_marginEnd="27dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:inputType="textPersonName" />
+</RelativeLayout>
